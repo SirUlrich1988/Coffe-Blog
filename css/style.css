@@ -96,6 +96,10 @@ img {
     }
 }
 
+.bar {
+    padding-top: 4rem;
+}
+
 @media (min-width: 768px) {
     .bar {
         display: flex;
@@ -201,3 +205,26 @@ img {
 .widget-course__inf {
     font-size: 2rem;
 }
+
+.footer {
+    background-color: var(--black);
+    padding: 2rem 0;
+}
+
+.footer-navigate {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+
