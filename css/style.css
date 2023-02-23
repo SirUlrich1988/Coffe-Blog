@@ -4,7 +4,7 @@
 
     --primary: #784d3c;
     --white: #ffffff;
-    --gray: #e1e1e1;
+    --gray: #c1aeae;
     --black: #000000;
 }
 
@@ -227,4 +227,46 @@ img {
     }
 }
 
+/* About */
 
+@media (min-width: 768px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Courses */
+
+.course {
+    padding: 3rem;
+    border-bottom: 1px solid var(--gray);
+}
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.course:last-of-type {
+    border: none;
+}
+
+.course-label {
+    font-family: var(--titleFont);
+    font-weight: bold;
+}
+
+.course-inf {
+    font-weight: normal;
+}
+
+.course-label,
+.course-inf {
+    font-size: 2rem;
+}
