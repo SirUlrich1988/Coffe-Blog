@@ -324,7 +324,7 @@ img {
 }
 
 .field__input {
-    padding: 0 2.5rem 0 2.5rem;
+    padding-right: 3.5rem;
 }
 
 .field--send {
