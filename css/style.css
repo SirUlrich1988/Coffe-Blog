@@ -162,12 +162,17 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 
 @media (min-width: 768px) {
     .button {
         display: inline-block;
     }
+}
+
+.button:hover {
+    cursor: pointer;
 }
 
 .button--primary {
@@ -270,3 +275,64 @@ img {
 .course-inf {
     font-size: 2rem;
 }
+
+/* Contact */
+
+.contact-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .form {
+        background-color: var(--white);
+        margin: -5rem auto 0 auto;
+        width: 95%;
+        padding: 5rem;
+    }
+    
+    .field {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    
+    .field__label {
+        flex: 0 0 9rem;
+        text-align: right;
+        padding-right: 2rem;
+        
+    }
+    
+    .field__input {
+        flex: 1;
+        border: 1px solid var(--gray);
+        padding-left: 1rem;
+    }
+    
+    .field__input--textarea {
+        height: 20rem;
+    }
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 4rem;
+}
+
+.field__input {
+    padding: 0 2.5rem 0 2.5rem;
+}
+
+.field--send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
